@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <title>Falcon X</title>
+  </head>
+  <body>
+    
+    <canvas id="canvas" width="innerWidth" height="innerHeight"></canvas>
+    <!-- <div id='hamburger-menu'></div> -->
+ 
+    <!-- <canvas id="canvas"></canvas> -->
+    <button id="pause-btn" onclick="gamePause()" href="#">⏯</button>
+    <div id="start-screen">
+      <div id="start-message">
+        <h1>How to Play</h1>
+        <ol>
+          <li>Press the A-W-S-D keys to move your ship and avoid the asteroid.</li>
+          <li>
+            Use your cursor to fire your gun and destroy asteroids Keep in mind
+            larger asteroids will take more hits to destroy!
+          </li>
+          <li>Rack up points by destroying asteroids and watch your health!</li>
+          <li>Press space bar to use special power. Watch your Mana Bar!</li>
+          <li>Power-Ups refill your mana by 20.</li>
+          <li>To begin, click the start button! Don't die LOSER!</li>
+          
+        </ol>
+        <button class="startGame" id="start-btn" onclick="startGame()" href="#">Start game</button>
+        <button class="toggleSound" id="sound-btn" onclick='play(bgMusic)' href="#">🔇</button>
+      </div>
+    </div>
+    <!-- <canvas></canvas> -->
+    <!-- <canvas id="canvas" width="innerWidth" height="innerHeight"></canvas> -->
+    <footer>
+      <div id="health-section">
+        <h2>Health - <span id="health-points">100%</span></h2>
+        <div class="bar" id="health-bar"><span id="health-fill"></span></div>
+      </div>
+
+      <div id="level">
+        <h2>Level: <span id="levelNum">0</span></h2>
+      </div>
+
+      <div id="score">
+        <h2>Score: <span id="scoreNum">000</span></h2>
+      </div>
+
+      <div id="mana-section">
+        <h2><span id="mana-points">0%</span> - Mana</h2>
+        <div class="bar" id="mana-bar"><span id="mana-fill"></span></div>
+      </div>
+    </footer>
+    <div id="gameover-screen">
+      <div id="gameover-message">
+        <h1>Game Over</h1>
+        <div id="score">
+          <h2>Score: <span id="finalScore">000</span></h2>
+        </div>
+        <button id="replay-btn" onclick='replay()' href="#">Play Again</button>
+        <button class="gameOver" id="sound-btn" onclick='play(gameOver)' href="#">🔇</button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

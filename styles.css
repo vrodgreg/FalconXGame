@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: Orbitron;
+    overflow: hidden;
+}
+
+#start-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+#start-message {
+    background: url('./images/startScreen.gif');
+    color: white;
+    box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25), 0 -0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 2.5vw;
+    padding: 2.5vw;
+    line-height: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+#start-message h1 {
+    text-align: center;
+}
+
+#start-btn {
+    background: lightgreen;
+    box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.5vw;
+    border: none;
+    padding: 1vw 2vw;
+    margin: 1vw 0;
+    width: 15vw;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: Orbitron;
+}
+
+#pause-btn {
+    text-decoration: none;
+    font-size: 2.5vw;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 1vw;
+    right: 1vw;
+    z-index: 1;
+    background: none;
+    border: none;
+}
+
+#sound-btn {
+    background: none;
+    text-decoration: none;
+    border: none;
+    align-self: flex-end;
+    font-size: 2.5vw;
+}
+
+canvas {
+    background: url('./images/falconXBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0.5vw 1.5vw;
+    color: white;
+}
+
+h2 {
+    padding: 0 0 0.5vw;
+    margin: 0;
+    font-size: 2vw;
+}
+
+.bar {
+    box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+    border: 0.08vw solid black;
+    border-radius: 2vw;
+    margin: 0;
+    width: 30vw;
+}
+
+#health-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#mana-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#health-bar, #mana-bar {
+    display: flex;
+    align-items: center;
+    min-height: 1.45vw;
+}
+
+#health-bar {
+    justify-content: flex-start;
+}
+
+#mana-bar {
+    justify-content: flex-end;
+}
+
+#health-fill, #mana-fill {
+    border-radius: 2vw;
+    min-height: 1.45vw;
+}
+
+#health-fill {
+    background-color: green;
+    text-align: left;
+    width: 100%;
+}
+
+#mana-fill {
+    background-color: blue;
+    text-align: right;
+    width: 0%;
+}
+
+#gameover-screen {
+    background: url('./images/gameoverScreen.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;        
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#gameover-message {
+    width: 50vw;
+    height: 30vw;
+    margin: auto;
+    border-radius: 2.5vw;
+    padding: 2.5vw;
+    line-height: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3vw;
+}
+
+#replay-btn {
+    background: lightgreen;
+    box-shadow: 0 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+    border-radius: 2.5vw;
+    border: none;
+    padding: 1vw 2vw;
+    margin: 1vw 0;
+    width: 15vw;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3vw;
+    font-weight: bold;
+    font-family: Orbitron;
+}
